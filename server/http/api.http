@@ -1,0 +1,22 @@
+### Get all movies
+GET http://localhost:1234/movies
+
+###Get movie by Id
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+###Get movie by genre
+GET http://localhost:1234/movies?genre=Crime
+
+###Create new movie
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "Avatar",
+    "year": 2009,
+    "director": "James Cameron",
+    "duration": 162,
+    "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "rate": 7.8
+}
